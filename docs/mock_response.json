@@ -1,0 +1,36 @@
+{
+  "id": "abc123",
+  "influencer_name": "fashion_riya",
+  "authenticity_score": 62,
+  "risk_level": "Medium",
+  "fake_follower_pct": 31.5,
+  "spam_comment_pct": 24.0,
+  "engagement_anomaly_pct": 18.0,
+  "reasons": [
+    { "feature": "Duplicate comments", "impact": 0.34 },
+    { "feature": "Follower spike on 12 Oct", "impact": 0.28 },
+    { "feature": "Low engagement rate", "impact": 0.19 }
+  ],
+  "growth": [
+    { "date": "2026-10-01", "followers": 10200, "is_spike": false },
+    { "date": "2026-10-05", "followers": 10450, "is_spike": false },
+    { "date": "2026-10-12", "followers": 18500, "is_spike": true },
+    { "date": "2026-10-20", "followers": 18700, "is_spike": false }
+  ],
+  "comments": [
+    { "user": "user123", "text": "nice pic", "is_spam": true, "reason": "generic" },
+    { "user": "priya_k", "text": "Love this outfit, where is it from?", "is_spam": false, "reason": null },
+    { "user": "bot_882", "text": "check my profile for free followers", "is_spam": true, "reason": "link/promo" }
+  ],
+  "graph": {
+    "nodes": [
+      { "id": "u1", "is_bot": true },
+      { "id": "u2", "is_bot": true },
+      { "id": "u3", "is_bot": false }
+    ],
+    "edges": [
+      { "source": "u1", "target": "u2" },
+      { "source": "u2", "target": "u3" }
+    ]
+  }
+}
